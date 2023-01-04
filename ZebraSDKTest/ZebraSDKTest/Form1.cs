@@ -89,6 +89,26 @@ namespace ZebraSDKTest
             {
                 this.Invoke((MethodInvoker)delegate { textBox2.Text = barcode; });
             }
+
+            this.Invoke((MethodInvoker)delegate {
+                textBox3.Text = AsciiToString(xmlDoc.GetElementsByTagName("datalabel")[0].InnerText);
+            });
+        }
+
+        string AsciiToString(string contentStr)
+        {
+            string returnValue = null;
+
+            string[] splitStr = contentStr.Split(' ');
+
+            foreach (var item in splitStr)
+            {
+                int n = Convert.ToInt32(item, 16);//chuyển đổi từ HEX --> DEC
+
+                returnValue = returnValue + (char)n;//get ky tu ASCII
+            }
+
+            return returnValue;
         }
     }
 }
