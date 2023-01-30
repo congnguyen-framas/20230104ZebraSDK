@@ -19,6 +19,11 @@ namespace ZebraSDKTest
 
         private void Form1_Load(object sender, System.EventArgs e)
         {
+            InitializeScaner();
+        }
+
+        void InitializeScaner()
+        {
             //Instantiate CoreScanner Class
             cCoreScannerClass = new CCoreScanner();
             //Call Open API
