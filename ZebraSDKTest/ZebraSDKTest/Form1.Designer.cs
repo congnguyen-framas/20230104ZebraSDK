@@ -30,9 +30,12 @@ namespace ZebraSDKTest
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtBarcodeString1 = new System.Windows.Forms.TextBox();
+            this.txtBarcodeString2 = new System.Windows.Forms.TextBox();
+            this.txtData2 = new System.Windows.Forms.TextBox();
+            this.txtData1 = new System.Windows.Forms.TextBox();
+            this.txtDataAscii2 = new System.Windows.Forms.TextBox();
+            this.txtDataAscii1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
@@ -44,38 +47,65 @@ namespace ZebraSDKTest
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // txtBarcodeString1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 55);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(1276, 149);
-            this.textBox1.TabIndex = 1;
+            this.txtBarcodeString1.Location = new System.Drawing.Point(12, 41);
+            this.txtBarcodeString1.Multiline = true;
+            this.txtBarcodeString1.Name = "txtBarcodeString1";
+            this.txtBarcodeString1.Size = new System.Drawing.Size(652, 436);
+            this.txtBarcodeString1.TabIndex = 2;
             // 
-            // textBox2
+            // txtBarcodeString2
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 423);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(1276, 350);
-            this.textBox2.TabIndex = 2;
+            this.txtBarcodeString2.Location = new System.Drawing.Point(670, 41);
+            this.txtBarcodeString2.Multiline = true;
+            this.txtBarcodeString2.Name = "txtBarcodeString2";
+            this.txtBarcodeString2.Size = new System.Drawing.Size(652, 436);
+            this.txtBarcodeString2.TabIndex = 2;
             // 
-            // textBox3
+            // txtData2
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 220);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(1276, 149);
-            this.textBox3.TabIndex = 1;
+            this.txtData2.Location = new System.Drawing.Point(670, 640);
+            this.txtData2.Multiline = true;
+            this.txtData2.Name = "txtData2";
+            this.txtData2.Size = new System.Drawing.Size(651, 149);
+            this.txtData2.TabIndex = 3;
+            // 
+            // txtData1
+            // 
+            this.txtData1.Location = new System.Drawing.Point(12, 640);
+            this.txtData1.Multiline = true;
+            this.txtData1.Name = "txtData1";
+            this.txtData1.Size = new System.Drawing.Size(652, 149);
+            this.txtData1.TabIndex = 4;
+            // 
+            // txtDataAscii2
+            // 
+            this.txtDataAscii2.Location = new System.Drawing.Point(670, 483);
+            this.txtDataAscii2.Multiline = true;
+            this.txtDataAscii2.Name = "txtDataAscii2";
+            this.txtDataAscii2.Size = new System.Drawing.Size(651, 149);
+            this.txtDataAscii2.TabIndex = 5;
+            // 
+            // txtDataAscii1
+            // 
+            this.txtDataAscii1.Location = new System.Drawing.Point(12, 483);
+            this.txtDataAscii1.Multiline = true;
+            this.txtDataAscii1.Name = "txtDataAscii1";
+            this.txtDataAscii1.Size = new System.Drawing.Size(652, 149);
+            this.txtDataAscii1.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1300, 797);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(1333, 797);
+            this.Controls.Add(this.txtData2);
+            this.Controls.Add(this.txtData1);
+            this.Controls.Add(this.txtDataAscii2);
+            this.Controls.Add(this.txtDataAscii1);
+            this.Controls.Add(this.txtBarcodeString2);
+            this.Controls.Add(this.txtBarcodeString1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -87,9 +117,12 @@ namespace ZebraSDKTest
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtBarcodeString1;
+        private System.Windows.Forms.TextBox txtBarcodeString2;
+        private System.Windows.Forms.TextBox txtData2;
+        private System.Windows.Forms.TextBox txtData1;
+        private System.Windows.Forms.TextBox txtDataAscii2;
+        private System.Windows.Forms.TextBox txtDataAscii1;
     }
 }
 
