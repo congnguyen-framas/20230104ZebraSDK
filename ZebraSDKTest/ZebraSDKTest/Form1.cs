@@ -86,22 +86,24 @@ namespace ZebraSDKTest
 
             var scannerId = xmlDoc.GetElementsByTagName("scannerID");
 
-            if (scannerId[0].InnerText=="1")
+            this.Invoke((MethodInvoker)delegate { labId.Text = scannerId[0].InnerText; });
+            //if (scannerId[0].InnerText=="1" || scannerId[0].InnerText == "3")
             {
                 this.Invoke((MethodInvoker)delegate { txtDataAscii1.Text = xmlDoc.GetElementsByTagName("datalabel")[0].InnerText; });
                 this.Invoke((MethodInvoker)delegate { txtBarcodeString1.Text = barcode; });
-                this.Invoke((MethodInvoker)delegate {
+                this.Invoke((MethodInvoker)delegate
+                {
                     txtData1.Text = AsciiToString(xmlDoc.GetElementsByTagName("datalabel")[0].InnerText);
                 });
             }
-            else if (scannerId[0].InnerText == "2")
-            {
-                this.Invoke((MethodInvoker)delegate { txtDataAscii2.Text = xmlDoc.GetElementsByTagName("datalabel")[0].InnerText; });
-                this.Invoke((MethodInvoker)delegate { txtBarcodeString2.Text = barcode; });
-                this.Invoke((MethodInvoker)delegate {
-                    txtData2.Text = AsciiToString(xmlDoc.GetElementsByTagName("datalabel")[0].InnerText);
-                });
-            }
+            //else if (scannerId[0].InnerText == "2")
+            //{
+            //    this.Invoke((MethodInvoker)delegate { txtDataAscii2.Text = xmlDoc.GetElementsByTagName("datalabel")[0].InnerText; });
+            //    this.Invoke((MethodInvoker)delegate { txtBarcodeString2.Text = barcode; });
+            //    this.Invoke((MethodInvoker)delegate {
+            //        txtData2.Text = AsciiToString(xmlDoc.GetElementsByTagName("datalabel")[0].InnerText);
+            //    });
+            //}
         }
 
         string AsciiToString(string contentStr)

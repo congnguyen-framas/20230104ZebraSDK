@@ -36,6 +36,7 @@ namespace ZebraSDKTest
             this.txtData1 = new System.Windows.Forms.TextBox();
             this.txtDataAscii2 = new System.Windows.Forms.TextBox();
             this.txtDataAscii1 = new System.Windows.Forms.TextBox();
+            this.labId = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -95,11 +96,21 @@ namespace ZebraSDKTest
             this.txtDataAscii1.Size = new System.Drawing.Size(652, 149);
             this.txtDataAscii1.TabIndex = 6;
             // 
+            // labId
+            // 
+            this.labId.AutoSize = true;
+            this.labId.Location = new System.Drawing.Point(536, 12);
+            this.labId.Name = "labId";
+            this.labId.Size = new System.Drawing.Size(35, 13);
+            this.labId.TabIndex = 7;
+            this.labId.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1333, 797);
+            this.Controls.Add(this.labId);
             this.Controls.Add(this.txtData2);
             this.Controls.Add(this.txtData1);
             this.Controls.Add(this.txtDataAscii2);
@@ -123,6 +134,7 @@ namespace ZebraSDKTest
         private System.Windows.Forms.TextBox txtData1;
         private System.Windows.Forms.TextBox txtDataAscii2;
         private System.Windows.Forms.TextBox txtDataAscii1;
+        private System.Windows.Forms.Label labId;
     }
 }
 
